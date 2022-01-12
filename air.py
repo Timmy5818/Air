@@ -9,6 +9,7 @@ aqi_url = "https://data.epa.gov.tw/api/v1/aqx_p_432?api_key=1909f878-5d76-4093-9
 response = requests.get(aqi_url)
 aqi = response.json()['records']
 
+
 # 測試資料回傳狀況代碼200為正常回傳，404為回傳錯誤
 print(response.status_code)
 # 下7行為檢查資料是否正常回報
